@@ -1,0 +1,16 @@
+{
+    "name": "micaelmf/frequencia-de-viagem",
+	"description": "Sistema simples para auxiliar grupos de estudantes em longas viagens de ônibus, fornecendo uma maneira de verificar se todos embarcaram.",
+	"authors": [
+        {
+            "name": "Micael Maia Ferreira",
+            "email": "micaelmf@gmail.com"
+        }
+    ],
+	"require": {
+        "fortawesome/font-awesome": "^4.7",
+		"driftyco/ionicons": "^2.0.1",
+		"datatables/datatables": "^1.10.19",
+		"components/jqueryui": "^1.12.1"
+    }
+}
