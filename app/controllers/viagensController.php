@@ -16,4 +16,10 @@ class viagensController
 		//echo 'chamada de viagem - ' . $num[0];
 		include ROOT . 'app/views/chamada-org.php';
 	}
+
+	public function viajante($num)
+	{
+		//echo 'chamada de viagem - ' . $num[0];
+		include ROOT . 'app/views/chamada-viaj.php';
+	}
 }
