@@ -1,0 +1,30 @@
+html {
+    scroll-behavior: smooth;
+}
+
+@media (min-width: 576px){
+    .jumbotron {
+    margin-top: 58px;
+    }
+}
+
+.jumbotron {
+    margin-top: 58px;
+}
+
+.presente {
+    background-color: #28a745;
+    color: white;
+    font-weight: bolder;
+}
+
+.ausente {
+    background-color: #dc3545;
+    color: white;
+    font-weight: bolder;
+}
+
+.alerta-ausente {
+    background-color: #dc3545;
+    color: white;
+}

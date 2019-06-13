@@ -11,8 +11,9 @@ class viagensController
         echo 'criar';
 	}
 	
-	public function frequencia($num)
+	public function chamada($num)
 	{
-		echo 'frequência de viagem - ' . $num[0];
+		//echo 'chamada de viagem - ' . $num[0];
+		include ROOT . 'app/views/chamada-org.php';
 	}
 }

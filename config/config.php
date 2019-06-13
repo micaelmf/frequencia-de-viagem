@@ -13,16 +13,16 @@ $acessoAdm = "admin";
 $nomeSite = "Comunidade Vale Livre";
 $dominio = "http://valelivre.org/";
 
-//define("DIR_BASE", $_SERVER["DOCUMENT_ROOT"]."/app");
+define("DIR_BASE", $_SERVER["DOCUMENT_ROOT"]."/");
 //define("IMPORTS", "app"); //para usar nos includes e requires
 define("URL_BASE", "http://{$_SERVER["HTTP_HOST"]}/");
-define("DIR_BASE", "/"); //para usar dentro das tags html
+//define("DIR_BASE", "/"); //para usar dentro das tags html
 
 /**
  * Diretórios
  */
 define("IMAGES", "/public/img/");
-define("PUBLIC", ROOT . "public/");
+define("PUBLIC", DIR_BASE . "public/");
 define("CSS", "/public/css/");
 define("LESS", "/public/less/");
 define("JS", "/public/js/");
