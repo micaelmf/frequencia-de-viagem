@@ -1,3 +1,4 @@
+<?php 
 class Viagem 
 {
     private $idViagem;
