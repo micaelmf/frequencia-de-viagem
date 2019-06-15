@@ -46,7 +46,7 @@ define("PAG_PERM", VIEWS . "sem-permissao.php");
  * Acesso ao banco de dados
  */
 define("BD_HOST", "db");
-define("BD_NAME", "sistema");
+define("BD_NAME", "valelivre");
 define("BD_USER", "micael");
 define("BD_PW", "123123");
 /*

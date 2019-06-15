@@ -30,7 +30,6 @@
     </nav>
 
     <main role="main">
-
       <!-- Principal jumbotron, para a principal mensagem de marketing ou call to action -->
       <div class="jumbotron" id="jumbotron">
         <div class="container" id='boas-vindas'>
@@ -88,81 +87,33 @@
 					</tr>
 					</thead>
 					<tbody>
-					<tr>
-						<td>Os Paidégua - Quixadá</td>
-						<td>Fortaleza</td>
-						<td>4h25rfg233dg</td>
-						<td>
-							<button class="btn btn-sm btn-outline-primary" type="button">Chamada</button>
-							<button 
-								class="btn btn-sm btn-outline-warning"
-								type="button"
-								onclick="editar(this)"
-								data-identificador='Os Paidégua - Quixadá'
-								data-destino='Fortaleza'
-								data-chave='4h25rfg233dg'>
+						<?php foreach ($viagens as $viagem) { ?>
+						<tr>
+							<td><?= $viagem['identificador'] ?></td>
+							<td><?= $viagem['destino'] ?></td>
+							<td><?= $viagem['chave'] ?></td>
+							<td>
+								<button class="btn btn-sm btn-outline-primary" type="button">Chamada</button>
+								<button 
+									class="btn btn-sm btn-outline-warning"
+									type="button"
+									onclick="editar(this)"
+									data-identificador='<?= $viagem['identificador'] ?>'
+									data-destino='<?= $viagem['destino'] ?>'
+									data-chave='<?= $viagem['chave'] ?>'>
 									Editar
-							</button>
-							<button 
-								class="btn btn-sm btn-outline-danger" 
-								type="button"
-								onclick="exibirExcluir(this)"
-								data-identificador='Os Paidégua - Quixadá'
-								data-chave='4h25rfg233dg'>
-								Excluir
-							</button>
-						</td>
-					</tr>
-					<tr>
-						<td>Cabra do bom - Russas</td>
-						<td>Belém</td>
-						<td>35thg2h5u55</td>
-						<td>
-							<button class="btn btn-sm btn-outline-primary" type="button">Chamada</button>
-							<button 
-								class="btn btn-sm btn-outline-warning"
-								type="button"
-								onclick="editar(this)"
-								data-identificador='Cabra do bom - Russas'
-								data-destino='Belém'
-								data-chave='35thg2h5u55'>
-									Editar
-							</button>
-							<button 
-								class="btn btn-sm btn-outline-danger" 
-								type="button"
-								onclick="exibirExcluir(this)"
-								data-identificador='Cabra do bom - Russas'
-								data-chave='35thg2h5u55'>
-								Excluir
-							</button>
-						</td>
-					</tr>
-					<tr>
-						<td>Os Cangaceiros - Russas</td>
-						<td>Vitória</td>
-						<td>f1234dfa3g</td>
-						<td>
-							<button class="btn btn-sm btn-outline-primary" type="button">Chamada</button>
-							<button 
-								class="btn btn-sm btn-outline-warning"
-								type="button"
-								onclick="editar(this)"
-								data-identificador='Os Cangaceiros - Russas'
-								data-destino='Vitória'
-								data-chave='f1234dfa3g'>
-									Editar
-							</button>
-							<button 
-								class="btn btn-sm btn-outline-danger" 
-								type="button"
-								onclick="exibirExcluir(this)"
-								data-identificador='Os Cangaceiros - Russas'
-								data-chave='f1234dfa3g'>
-								Excluir
-							</button>
-						</td>
-					</tr>
+								</button>
+								<button 
+									class="btn btn-sm btn-outline-danger" 
+									type="button"
+									onclick="exibirExcluir(this)"
+									data-identificador='<?= $viagem['identificador'] ?>'
+									data-chave='<?= $viagem['chave'] ?>'>
+									Excluir
+								</button>
+							</td>
+						</tr>	
+						<?php } ?>
 					</tbody>
 				</table>
 			<div>

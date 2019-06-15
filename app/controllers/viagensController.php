@@ -2,8 +2,18 @@
 
 class viagensController
 {
-    public function viagem()
+    public function viagens()
 	{
+		require_once DAO . 'ViagemDAO.php';
+        require_once ROOT . "app/core/Controller.php";
+		
+		/* session_start();
+        $controller = new Controller();
+        $controller->verificaSessao(); */
+
+        $dao = new ViagemDAO();
+		$viagens = $dao->carregaViagensDoOrganizador(1);
+
 		include ROOT . 'app/views/viagens.php';
 	}
     public function criar()

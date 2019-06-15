@@ -16,7 +16,7 @@ class FrontController
             $params = [];
         } elseif ($explode_url[1] == "viagens" && !isset($explode_url[2])) {
             $controller = "viagens";
-            $action = "viagem";
+            $action = "viagens";
         } elseif ($explode_url[1] == "viagens" && isset($explode_url[2])) {
             $controller = "viagens";
             $action = $slice_url[0];
